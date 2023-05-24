@@ -1,6 +1,7 @@
 /*
  时光签到
  0 6 * * * ShiGuang.js
+ export photoUser="13888888888#123456"
 * */
 const $ = new Env('时光相册');
 const notify = $.isNode() ? require('./sendNotify') : '';
@@ -51,7 +52,6 @@ function readFile(cacheFile) {
             });
 
     }
-    // await notify.sendNotify(`京东账号重新登录获取cookie`);
 })()
 .catch((e) => {
     $.logErr(e);
