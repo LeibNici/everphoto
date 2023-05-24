@@ -1,6 +1,6 @@
 /*
  时光签到
- 0 6 * * * ShiGuang.js
+ 0 6 * * * everphoto.js
  export photoUser="13888888888#123456"
 * */
 const $ = new Env('时光相册');
