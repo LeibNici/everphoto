@@ -90,7 +90,7 @@ async function photoLogin(username,password) {
                         };
 
                         // 要保存的文件名
-                        const fileName = 'user_'+username+'json';
+                        const fileName = 'user'+username+'.json';
 
                         // 将数据转换为 JSON 格式并保存到文件
                         fs.writeFile(fileName, JSON.stringify(userCatch, null, 2), function(err) {
